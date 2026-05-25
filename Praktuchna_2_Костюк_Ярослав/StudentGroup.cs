@@ -152,5 +152,21 @@ namespace ConsoleApp1
             Logger.LogOperation("Лабораторна", portNum, "Студент " + s.FullName + " здав лабу №" + labNumber + " на " + grade + " балів.");
             Console.WriteLine("Лабораторну роботу успішно симульовано!");
         }
+        public Student FindStudentByName(string name)
+        {
+            foreach (Student s in _students)
+            {
+                if (s.FullName == name)
+                {
+                    return s;
+                }
+            }
+            return null; // Якщо студента не знайдено
+        }
+
+        public void RemoveStudent(Student student)
+        {
+            _students.Remove(student);
+        }
     }
 }
