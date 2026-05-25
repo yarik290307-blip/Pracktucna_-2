@@ -84,5 +84,14 @@ namespace ConsoleApp1
 
             Console.WriteLine("Загалом відкритих портів: " + openCount);
         }
+        public bool IsPortOpen(int row, int col)
+        {
+            if (IsValidIndex(row, col))
+            {
+                return _matrix[row, col].IsOpen;
+            }
+            return false;
+        }
     }
+
 }

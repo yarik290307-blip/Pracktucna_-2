@@ -27,6 +27,8 @@ namespace ConsoleApp1
         public DateTime EnrollmentDate { get; init; }
         public DateTime DateOfBirth { get; set; }
         public StudentStatus Status { get; set; }
+        public int AssignedPortRow { get; set; } = -1;
+        public int AssignedPortCol { get; set; } = -1;
 
         public string FullName
         {
