@@ -93,7 +93,7 @@ namespace ConsoleApp1
             Journal = new GradeJournal();
             _labGrades = new byte[10]; 
         }
-        }
+
 
         public void ShowDetailedInfo()
         {
